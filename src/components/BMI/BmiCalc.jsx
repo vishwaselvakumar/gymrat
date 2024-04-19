@@ -9,7 +9,7 @@ function BmiCalc() {
   let calcBmi = (e) => {
     e.preventDefault();
     if (weight === 0 || height === 0) {
-      alert("Please enter a valid weight and height");
+      alert("Please enter a valid weight & height");
     } else {
       let bmi = weight / ((height * height) / 10000);
       setBmi(bmi.toFixed(1));
